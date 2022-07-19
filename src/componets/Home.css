@@ -1,0 +1,77 @@
+ #navbarScroll {
+     display: flex !important;
+     flex-basis: auto;
+     justify-content: space-between !important;
+ }
+
+ .logo {
+     font-weight: 400;
+     font-size: 25px;
+     color: black;
+ }
+
+ .login {
+     font-weight: 400;
+     font-size: 20px;
+     color: #000000 !important;
+     text-decoration: none;
+ }
+
+ a {
+     color: #000000 !important;
+ }
+
+ a :hover {
+     color: #000000 !important;
+ }
+
+ .signUp {
+     font-weight: 400;
+     font-size: 20px;
+     color: #000000 !important;
+     text-decoration: none;
+ }
+
+ .navbar-expand-lg .navbar-collapse {
+     display: flex !important;
+     flex-basis: auto;
+     justify-content: space-between;
+ }
+
+ .inputFindNow {
+     border: 1px solid #8fa2c0;
+     border-radius: 27px;
+     padding: 8px;
+     padding-left: 2.8rem;
+     font-weight: 400;
+     font-size: 20px;
+     color: #8fa2c0;
+ }
+
+ .btn-primry {
+     color: #f09133 !important;
+
+ }
+
+ .inputFindNow {
+     border: 1px solid #8fa2c0;
+     border-radius: 27px;
+     padding: 8px;
+     padding-left: 1rem;
+     font-weight: 400;
+     font-size: 20px;
+     color: #8fa2c0;
+ }
+
+ .btn {
+     border-radius: 27px;
+     font-weight: 500;
+     padding-left: 2rem;
+     font-size: 20px;
+     padding-right: 2rem;
+     color: #ffffff;
+     position: relative;
+     right: 3rem;
+     background-color: #082A4F !important;
+     border-color: #082A4F !important;
+ }
