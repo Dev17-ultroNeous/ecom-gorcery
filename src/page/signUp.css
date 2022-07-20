@@ -1,0 +1,117 @@
+.boxSignup {
+    background-image: url('../assets/Img/backimg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxSignup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headingSignUp {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: 0.41px;
+    color: #082A4F
+}
+
+.inputField {
+    background: #082A4F;
+    border-radius: 6px;
+    font-size: 16px;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    width: 100%;
+    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem
+}
+
+.signUp {
+    border-radius: 27px;
+    font-weight: 500;
+    font-size: 20px;
+    padding-right: 9rem;
+    padding-left: 8rem;
+    align-items: center;
+    display: flex;
+    color: #ffffff !important;
+    position: relative;
+    right: 0rem;
+    top: 1rem;
+    background: #F2281A !important;
+    border-radius: 10px;
+    border-color: #F2281A !important;
+
+}
+
+.btnSignUpBox {
+    position: relative;
+    top: 2rem;
+}
+
+.haveAccount {
+    position: relative;
+    top: 5rem;
+}
+
+.errors {
+    color: #F2281A;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    bottom: 1.2rem;
+}
+
+.errorBoxs {
+    height: 3.5rem;
+}
+
+.linkLogin {
+    text-decoration: none;
+    color: #F2281A !important;
+    font-size: 18px;
+    position: relative;
+    left: 3px;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .signUp {
+        padding-right: 3rem;
+        padding-left: 3rem;
+        font-size: 20px;
+    }
+
+    .btnSignUpBox {
+        position: relative;
+        top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .textAccount {
+
+        font-size: 15px;
+    }
+
+    .boxSignup {
+        height: auto;
+    }
+}

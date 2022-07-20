@@ -1,15 +1,16 @@
 import React from 'react'
 import { Card, Col, Image, Row } from 'react-bootstrap'
 import { GoPlus } from 'react-icons/go'
+import NavBarsHome from '../componets/NavBar'
 import '../componets/Products.css'
-function ProductSection({ list, name, link }) {
+
+function AllProducts({ list, name, link }) {
     return (
-        <section className='productsSection'>
+        <section>
+            <NavBarsHome />
             <div className='productsContainer'>
                 <div className='products'>
                     <h1 className='headingProducts'>{name}</h1>
-                    <a href={link} >Show All</a>
-
                 </div>
 
                 <Row>
@@ -48,8 +49,8 @@ function ProductSection({ list, name, link }) {
                 </Row>
 
             </div>
-        </section >
+        </section>
     )
 }
 
-export default ProductSection
+export default AllProducts

@@ -32,7 +32,7 @@
 .productCard {
     border: 1px solid whitesmoke;
     border-radius: 1.25rem;
-    box-shadow: 1rem 1rem 1rem aliceblue;
+    box-shadow: 0.5rem 1rem 1rem whitesmoke;
 }
 
 .addBtn {

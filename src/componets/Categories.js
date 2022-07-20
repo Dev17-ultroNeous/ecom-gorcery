@@ -7,9 +7,8 @@ function Categories() {
         <section className="categoriesSection">
             <div className="headingCategories">
                 <h1 className="heading">Categories</h1>
-                <a href="#" >Show All</a>
+                <a href="allcategories" >Show All</a>
             </div>
-
             <div className="boxCategories">
                 <Row>
                     {categoriesData.map((v, i) => {
@@ -18,11 +17,12 @@ function Categories() {
                                 <Card className="productCard">
                                     <Card.Body>
                                         <div className="categoriesImg">
-                                            <a href="#"> <Image src={v.image} className="img-fluid" /></a>
+                                            <a href="#"> <Image src={v.image} /></a>
                                         </div>
-                                        <h2 className="nameProduct">{v.name}</h2>
+
                                     </Card.Body>
                                 </Card>
+                                <h2 className="nameProduct">{v.name}</h2>
                             </Col>
                         );
                     })}

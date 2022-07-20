@@ -2,7 +2,7 @@ import slide from '../assets/Img/food.webp'
 import slide2 from '../assets/Img/vegitable.webp'
 import vegitablelogo from '../assets/Img/vegitablelogo.png'
 import fruitlogo from '../assets/Img/fruitlogo.png'
-import snacklogo from '../assets/Img/spice.png'
+import snacklogo from '../assets/Img/vefar.png'
 
 
 import carrot from '../assets/Img/carrot.png'
@@ -39,7 +39,7 @@ export const categoriesData = [
     },
     {
         image: snacklogo,
-        name: "Spice"
+        name: "Snacks"
     }
 ]
 
@@ -84,3 +84,23 @@ export const fruitData = [
     },
 ]
 
+export const spiceData = [
+    {
+        name: "snacks",
+        image: snacklogo,
+        weight: '30g',
+        price: '$13/kg'
+    },
+    {
+        name: "snacks",
+        image: snacklogo,
+        weight: '30g',
+        price: '$13/kg'
+    },
+    {
+        name: "snacks",
+        image: snacklogo,
+        weight: '30g',
+        price: '$13/kg'
+    },
+]

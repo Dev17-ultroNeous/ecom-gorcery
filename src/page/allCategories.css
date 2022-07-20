@@ -1,0 +1,15 @@
+.categoriesBox {
+    padding: 4rem;
+}
+
+.productCards {
+    border: 1px solid whitesmoke;
+    border-radius: 1.25rem;
+    box-shadow: 1rem 0rem 1rem whitesmoke;
+}
+
+.headingCategoriesAll {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
