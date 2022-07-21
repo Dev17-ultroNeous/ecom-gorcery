@@ -24,7 +24,7 @@
 
 .titleCard {
     font-weight: 700;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 22px;
     color: #082A4F;
 }
@@ -36,8 +36,10 @@
 }
 
 .addBtn {
-    width: 2rem;
-    height: 1.8rem;
+    padding: 13px;
+    font-size: 21px;
+    padding-top: 4px;
+    padding-bottom: 6px;
     background: #082A4F;
     border-radius: 4px;
     color: aliceblue;
@@ -52,14 +54,14 @@
 
 .weight {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: rgba(0, 0, 0, 0.6);
 }
 
 .price {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 22px;
     color: #082A4F;
     padding-top: 1rem;

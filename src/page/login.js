@@ -50,8 +50,9 @@ function Login() {
                                 }
                             })} placeholder='Password' className='inputEmail' />
                             {
-                                errors.password && <div className="error">{errors.password.message}</div>
+                                errors.password && <div className="errorMessage">{errors.password.message}</div>
                             }
+
                         </div>
 
                         <a href='/forgetpassword' className='forgetDetails'>Forgot Password?</a>

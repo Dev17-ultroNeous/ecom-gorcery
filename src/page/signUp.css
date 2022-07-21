@@ -112,6 +112,6 @@
     }
 
     .boxSignup {
-        height: auto;
+        height: 100vh;
     }
 }

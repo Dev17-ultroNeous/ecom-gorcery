@@ -13,7 +13,7 @@ function Categories() {
                 <Row>
                     {categoriesData.map((v, i) => {
                         return (
-                            <Col xl={4} md={4} xxl={4}>
+                            <Col xl={4} md={4} xxl={4} key={i}>
                                 <Card className="productCard">
                                     <Card.Body>
                                         <div className="categoriesImg">

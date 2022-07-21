@@ -1,0 +1,82 @@
+.myOrderContainer {
+    padding: 5rem;
+}
+
+.myOrder {
+    padding: 1rem;
+}
+
+.headingOrder {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.order {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 18px;
+    /* identical to box height, or 90% */
+
+    display: flex;
+    align-items: center;
+
+    color: #082A4F;
+}
+
+.containe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nameProdct {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #082A4F;
+    margin-bottom: 0.2rem !important;
+}
+
+.priceProduct {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2281A;
+
+}
+
+.imageOrder {
+    width: 8rem;
+
+}
+
+.btnView {
+    border-radius: 27px;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    color: #ffffff !important;
+    background: #F2281A !important;
+    border-radius: 4px;
+    border-color: #F2281A !important;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .myOrderContainer {
+        padding: 0rem;
+    }
+
+    .imageOrder {
+        width: 6rem;
+    }
+
+    .headingOrder {
+        padding-bottom: 0rem;
+        padding-top: 1rem;
+    }
+
+}

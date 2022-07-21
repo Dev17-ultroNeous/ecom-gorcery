@@ -39,7 +39,7 @@ function Sliders() {
                 {
                     sliderData.map((v, i) => {
                         return (
-                            <div className='sliderImage'>
+                            <div className='sliderImage' key={i}>
                                 <Image src={v.image} className='img-fluid' />
                             </div>
                         )

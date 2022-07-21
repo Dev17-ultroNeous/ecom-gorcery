@@ -12,11 +12,10 @@ function AllProducts({ list, name, link }) {
                 <div className='products'>
                     <h1 className='headingProducts'>{name}</h1>
                 </div>
-
                 <Row>
                     {list.map((v, i) => {
                         return (
-                            <Col xl={4} md={4}>
+                            <Col xl={4} md={4} key={i}>
                                 <Card className='productCard'>
                                     <Card.Body>
                                         <div className='title'>
@@ -25,7 +24,6 @@ function AllProducts({ list, name, link }) {
                                         <div className='productsImg'>
                                             <Image src={v.image} className='img-fluid' />
                                         </div>
-
                                         <Row>
                                             <Col xl={6} className='infoCol'>
                                                 <div className='information'>
@@ -42,7 +40,6 @@ function AllProducts({ list, name, link }) {
                                     </Card.Body>
                                 </Card>
                             </Col>
-
                         )
                     })
                     }

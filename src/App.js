@@ -15,24 +15,25 @@ import Otp from "./page/otp";
 import AllCategories from "./page/allCategories";
 import AllProducts from "./page/allProducts";
 import { allFruitData, allProductsData } from "./utils/allData";
+import MyOrder from "./page/myOrder";
+import { useContext, useState } from "react";
 function App() {
-  return (
-    <>
 
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<SignUp />} />
-        <Route path="forgetpassword" element={<ForgetPassword />} />
-        <Route path="otp" element={<Otp />} />
-        <Route path="resetpassword" element={<ResetPassword />} />
-        <Route path="allcategories" element={<AllCategories />} />
-        <Route path="allvegitable" element={<AllProducts list={allProductsData} name='vegitable' />} />
-        <Route path="allfruits" element={<AllProducts list={allFruitData} name='Fruits' />} />
-        <Route path="allsnacks" element={<AllProducts list={allFruitData} name='Snacks' />} />
-      </Routes>
-    </>
+  return (
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="login" element={<Login />} />
+      <Route path="signup" element={<SignUp />} />
+      <Route path="forgetpassword" element={<ForgetPassword />} />
+      <Route path="otp" element={<Otp />} />
+      <Route path="resetpassword" element={<ResetPassword />} />
+      <Route path="allcategories" element={<AllCategories />} />
+      <Route path="allvegitable" element={<AllProducts list={allProductsData} name='vegitable' />} />
+      <Route path="allfruits" element={<AllProducts list={allFruitData} name='Fruits' />} />
+      <Route path="allsnacks" element={<AllProducts list={allFruitData} name='Snacks' />} />
+      <Route path="myorder" element={<MyOrder />} />
+    </Routes>
   );
 }
 

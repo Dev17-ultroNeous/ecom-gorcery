@@ -4,16 +4,19 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { useContext } from 'react';
 import '../componets/Nav.css'
-
+import context from 'react-bootstrap/esm/AccordionContext';
+import { RiShoppingBasketFill } from 'react-icons/ri'
 const NavBarsHome = () => {
+    const value = useContext(useContext);
+
     return (
         <>
             <div className='navLab'>
                 <Navbar bg="light" expand="lg" >
                     <Container>
-                        <Navbar.Brand href="/home" className='logo'>Food Gorcery</Navbar.Brand>
+                        <Navbar.Brand href="/home" className='logo'>Food Grocery</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
@@ -21,7 +24,7 @@ const NavBarsHome = () => {
                                 navbarScroll
                             >
                                 <Nav.Link href="#action2">About</Nav.Link>
-                                <Nav.Link href="#action2">MyOrder</Nav.Link>
+                                <Nav.Link href="myorder">MyOrder</Nav.Link>
                                 <Nav.Link href="#">
                                     FAQ
                                 </Nav.Link>
@@ -40,6 +43,12 @@ const NavBarsHome = () => {
                                     aria-label="Search"
                                 />
                                 <Button className='searchBtn'>Search</Button>
+                                <a href='#' className='linkAddtocard'>
+                                    <div className='addToCard'>
+                                        <RiShoppingBasketFill />
+                                    </div>
+                                </a>
+
                             </Form>
                         </Navbar.Collapse>
                     </Container>

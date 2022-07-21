@@ -6,9 +6,9 @@
 
 
  .logo {
-     font-weight: 400;
+     font-weight: 500;
      font-size: 25px;
-     color: black;
+     color: #082A4F;
  }
 
  .login {
@@ -26,7 +26,7 @@
  }
 
  a {
-     color: #000000 !important;
+     color: #082A4F !important;
  }
 
  a :hover {
@@ -82,6 +82,18 @@
      right: 3rem;
      background-color: #082A4F !important;
      border-color: #082A4F !important;
+ }
+
+ .addToCard {
+     font-size: 3rem;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     color: #de4242;
+ }
+
+ .linkAddtocard :hover {
+     color: #de4242 !important;
  }
 
  @media (min-width: 320px) and (max-width: 750px) {

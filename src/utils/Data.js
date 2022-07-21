@@ -3,7 +3,9 @@ import slide2 from '../assets/Img/vegitable.webp'
 import vegitablelogo from '../assets/Img/vegitablelogo.png'
 import fruitlogo from '../assets/Img/fruitlogo.png'
 import snacklogo from '../assets/Img/vefar.png'
-
+import cabbage from '../assets/Img/cabbage.png'
+import began from '../assets/Img/bengan.png'
+import potato from '../assets/Img/potato.png'
 
 import carrot from '../assets/Img/carrot.png'
 import tomater from '../assets/Img/tomater.png'
@@ -45,18 +47,21 @@ export const categoriesData = [
 
 export const productsData = [
     {
+        id: 1,
         name: "carrot",
         image: carrot,
         weight: '30g',
         price: '$13/kg'
     },
     {
+        id: 2,
         name: "tomater",
         image: tomater,
         weight: '30g',
         price: '$13/kg'
     },
     {
+        id: 3,
         name: "corn",
         image: corn,
         weight: '30g',
@@ -103,4 +108,30 @@ export const spiceData = [
         weight: '30g',
         price: '$13/kg'
     },
+]
+
+
+export const myOrderData = [
+    {
+        id: 1,
+        name: "carrot",
+        image: carrot,
+
+        price: '$13/kg'
+    },
+    {
+        id: 2,
+        name: "apple",
+        image: apple,
+
+        price: '$13/kg'
+    },
+    {
+        id: 3,
+        name: "snacks",
+        image: snacklogo,
+        price: '$13/kg'
+    },
+
+
 ]
