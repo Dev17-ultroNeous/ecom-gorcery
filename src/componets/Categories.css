@@ -1,6 +1,6 @@
 .categoriesSection {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 .heading {
@@ -38,4 +38,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 750px) {
+    .categoriesSection {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

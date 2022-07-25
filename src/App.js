@@ -17,6 +17,8 @@ import AllProducts from "./page/allProducts";
 import { allFruitData, allProductsData } from "./utils/allData";
 import MyOrder from "./page/myOrder";
 import { useContext, useState } from "react";
+import ProductView from "./page/productView";
+import FavoriteProducts from "./page/favoriteProducts";
 function App() {
 
   return (
@@ -33,6 +35,8 @@ function App() {
       <Route path="allfruits" element={<AllProducts list={allFruitData} name='Fruits' />} />
       <Route path="allsnacks" element={<AllProducts list={allFruitData} name='Snacks' />} />
       <Route path="myorder" element={<MyOrder />} />
+      <Route path="productview" element={<ProductView />} />
+      <Route path="favorite" element={<FavoriteProducts />} />
     </Routes>
   );
 }

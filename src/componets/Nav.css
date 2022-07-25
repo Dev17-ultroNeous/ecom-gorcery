@@ -64,7 +64,8 @@
  .inputFindNow {
      border: 1px solid #8fa2c0;
      border-radius: 27px;
-     padding: 8px;
+
+     width: 18rem;
      padding-left: 1rem;
      font-weight: 400;
      font-size: 20px;
@@ -89,16 +90,58 @@
      text-align: center;
      display: flex;
      align-items: center;
-     color: #de4242;
+
  }
 
- .linkAddtocard :hover {
-     color: #de4242 !important;
+ .heartNav {
+     font-size: 32px;
+
+     position: relative;
+     left: 1rem;
+ }
+
+ .linkAddtocard {
+     display: flex;
+
  }
 
  @media (min-width: 320px) and (max-width: 750px) {
      .navLab {
          display: none;
+     }
+
+     .navMobile {
+         padding: 1rem;
+     }
+
+     .navLogo {
+         padding-left: 2.1rem;
+     }
+
+     .boxLogo {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .heartNav {
+         font-size: 32px;
+         position: relative;
+         left: 0.5rem;
+     }
+
+     .headingLogo {
+         font-size: 26px;
+     }
+
+     .toggleBtn {
+         font-size: 26px;
+         display: flex;
+         align-items: baseline;
+     }
+
+     .icon {
+         font-size: 26px;
+         margin: 1rem;
      }
  }
 
@@ -106,4 +149,5 @@
      .navMobile {
          display: none;
      }
+
  }

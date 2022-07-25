@@ -54,8 +54,9 @@ function Login() {
                             }
 
                         </div>
-
-                        <a href='/forgetpassword' className='forgetDetails'>Forgot Password?</a>
+                        <div className='linkForget'>
+                            <a href='/forgetpassword' className='forgetDetails'>Forgot Password?</a>
+                        </div>
                     </div>
 
                     <div className='loginBox'>

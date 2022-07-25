@@ -6,7 +6,7 @@ import snacklogo from '../assets/Img/vefar.png'
 import cabbage from '../assets/Img/cabbage.png'
 import began from '../assets/Img/bengan.png'
 import potato from '../assets/Img/potato.png'
-
+import deal from '../assets/Img/deal.png'
 import carrot from '../assets/Img/carrot.png'
 import tomater from '../assets/Img/tomater.png'
 import corn from '../assets/Img/corn.png'
@@ -87,6 +87,16 @@ export const fruitData = [
         weight: '30g',
         price: '$13/kg'
     },
+]
+export const relativefruitData = [
+    {
+        name: "apple",
+        image: apple,
+        type: fruitData,
+        weight: '30g',
+        price: '$13/kg'
+    },
+
 ]
 
 export const spiceData = [

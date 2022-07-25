@@ -28,17 +28,17 @@ function ProductSection({ list, name, link }) {
                                             <h2 className='titleCard'>{v.name}</h2>
                                         </div>
                                         <div className='productsImg'>
-                                            <Image src={v.image} className='img-fluid' />
+                                            <a href='/productview'> <Image src={v.image} className='img-fluid' /></a>
                                         </div>
 
                                         <Row>
-                                            <Col xl={6} className='infoCol'>
+                                            <Col xl={6} xs={6} className='infoCol'>
                                                 <div className='information'>
                                                     <span className='weight'>weight{v.weight} </span>
                                                     <span className='price'>{v.price} </span>
                                                 </div>
                                             </Col>
-                                            <Col xl={6} className='btnCol'>
+                                            <Col xl={6} xs={6} className='btnCol'>
                                                 <div className='addBtn' onClick={() => {
                                                     setItemCount(itemCount + 1);
                                                     setItem(v)

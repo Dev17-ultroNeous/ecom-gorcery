@@ -1,0 +1,148 @@
+.productViewContainer {
+    padding-top: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.imgProduct {
+    width: 50%;
+    height: auto;
+}
+
+.productViewRow {
+    padding: 4rem;
+}
+
+.nameProductView {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    color: #082A4F;
+}
+
+.typeProduct {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 5px;
+    color: #606368;
+}
+
+.priceProduct {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2281A;
+}
+
+.counter {
+    display: flex;
+    padding-top: 7px;
+    position: relative;
+    right: 8px;
+}
+
+.counterBtn {
+    padding: 4px;
+    border: 1px solid;
+    background: #ffe9e9;
+    text-align: center;
+    border-radius: 4px;
+    color: #e41111 !important;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 9px;
+}
+
+.numberText {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #082A4F;
+}
+
+.headingDescripation {
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #082A4F;
+}
+
+.detailsDescripation {
+    font-weight: 400;
+    font-size: 13px;
+
+    text-align: justify;
+    letter-spacing: 1.28px;
+
+    color: #082A4F;
+}
+
+.titleProducts {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 19px;
+    color: #082A4F;
+}
+
+.title {
+    padding-top: 0.2rem;
+}
+
+.descripation {
+    padding-top: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .productViewContainer {
+        padding-top: 1rem;
+        padding-left: 0rem;
+        padding-right: 1rem;
+    }
+
+    .productViewRow {
+        padding: 1rem;
+    }
+
+    .productCardSlider {
+        left: 0%;
+    }
+
+    .titleProducts {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 19px;
+        padding-left: 1rem;
+        color: #082A4F;
+    }
+
+    .detailsProductsBox {
+        padding-top: 2rem;
+    }
+
+    .countBox {
+        text-align: center;
+    }
+
+    .productImgCol {
+        display: flex;
+        justify-content: center;
+    }
+
+    .counter {
+        display: flex;
+        padding-top: 7px;
+        position: relative;
+        right: 0px;
+    }
+
+    .details {
+
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+    }
+}
