@@ -1,0 +1,99 @@
+.containerBox {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    height: 100vh;
+    background-color: #082A4F;
+}
+
+.imgRight {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.msgOrder {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding-top: 3rem;
+}
+
+.orderId {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding-top: 1rem;
+}
+
+.thankOrder {
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 4rem;
+}
+
+.deatilsThankYou {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.orderShiipedText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.traceOrder {
+    border-radius: 27px;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    width: 23%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    background: #F2281A;
+    border-radius: 10px;
+    border-color: #F2281A;
+
+}
+
+.btnTraceOrder {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.continueShop {
+    display: flex;
+    color: #FFFFFF;
+    text-decoration-line: underline !important;
+}
+
+.linkSuccess {
+    color: #FFFFFF;
+}
+
+.linkSuccess:hover {
+    color: #FFFFFF;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .containerBox {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .traceOrder {
+        width: 100%;
+    }
+}

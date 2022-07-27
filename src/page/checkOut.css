@@ -1,0 +1,136 @@
+.checkOutContainer {
+    padding-top: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.deliveryBox {
+    padding-top: 2rem;
+}
+
+.delivery {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #082A4F;
+}
+
+.change {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #F2281A
+}
+
+.locationInfo {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.location {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    padding-left: 1rem;
+    color: #59585D;
+}
+
+.titleCheck {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 24px;
+    color: #082A4F;
+}
+
+.priceCheckOut {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 21px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.orderChange {
+    text-align: end;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.termCondition {
+    padding-top: 3rem;
+}
+
+.detailsTermCondition {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 25%;
+    padding-left: 1rem;
+}
+
+.termLink {
+    color: #082A4F;
+}
+
+.placeOrder {
+    display: flex;
+    justify-content: center;
+}
+
+.placeorderBtn {
+    border-radius: 27px;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    width: 23%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    background: #F2281A;
+    border-radius: 10px;
+    border-color: #F2281A;
+}
+
+.linkPlaceOrder {
+    color: aliceblue;
+}
+
+.linkPlaceOrder:hover {
+    color: aliceblue;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .checkOutContainer {
+        height: 100vh;
+        padding-top: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .placeorderBtn {
+        width: 100%;
+    }
+
+    .detailsTermCondition {
+        width: 70%;
+
+    }
+
+    .titleCheck {
+        font-size: 18px;
+    }
+
+    .priceCheckOut {
+        font-size: 16px;
+
+    }
+}

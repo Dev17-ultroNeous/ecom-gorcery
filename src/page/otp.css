@@ -101,14 +101,14 @@
     padding-left: 5rem;
     align-items: center;
     display: flex;
-    color: #ffffff !important;
+    color: #ffffff;
     position: relative;
     /* right: 0rem; */
     left: 1rem;
     top: 1rem;
-    background: #F2281A !important;
+    background: #F2281A;
     border-radius: 10px;
-    border-color: #F2281A !important;
+    border-color: #F2281A;
 
 }
 

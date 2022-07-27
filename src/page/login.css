@@ -72,14 +72,14 @@
     padding-right: 6rem;
 }
 
-.forgetDetails {
+.linkForget a {
     font-weight: 400;
     font-size: 16px;
     position: relative;
     text-align: center;
-    color: #F2281A !important;
-    top: 2.9rem;
-    left: 5rem;
+    color: #F2281A;
+    top: 3.5rem;
+    left: 5.8rem;
 }
 
 .loginBtn {
@@ -90,9 +90,9 @@
     position: relative;
     margin-top: 1rem;
     right: 3rem;
-    background: #F2281A !important;
+    background: #F2281A;
     border-radius: 10px;
-    border-color: #F2281A !important;
+    border-color: #F2281A;
     padding-left: 7.5rem;
     padding-right: 7.5rem;
 
@@ -110,8 +110,9 @@
 .doNotAccount {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 3rem;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 0rem;
 
 }
 
@@ -122,11 +123,12 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-.signupLink {
+.doNotAccount a {
     text-decoration: none;
-    color: #F2281A !important;
+    color: #F2281A;
     font-size: 18px;
     position: relative;
+    font-weight: 500;
     left: 3px;
 }
 
@@ -137,8 +139,8 @@
     display: flex;
     color: rgba(0, 0, 0, 0.6);
     justify-content: center;
-    margin-top: 4rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .fbLogin {
@@ -146,12 +148,26 @@
     border: 1px solid #7D7D7D;
     border-radius: 10px;
     padding: 0.4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.fbLogin a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #082A4F;
+    text-decoration: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 a {
     text-decoration: none !important;
+}
+
+.loginBtn:hover {
+    color: white;
+    background-color: #F2281A;
 }
 
 .fbLoginBox {
@@ -218,7 +234,7 @@ a {
     }
 
     .loginBtn {
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
     }
 }

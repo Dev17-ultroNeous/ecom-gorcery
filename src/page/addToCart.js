@@ -7,11 +7,10 @@ import { cartData } from '../utils/Data'
 import '../page/addToCart.css'
 import { AiOutlineClose } from 'react-icons/ai'
 import { TotalPrice } from "../componets/TotalPrice";
-const UserContext = createContext();
+import { Link } from "react-router-dom";
 
 function AddToCart() {
-    const perProductValue = useContext(UserContext);
-    console.log(perProductValue);
+
     const [items, setItems] = useState(cartData)
 
     function Counter(props) {
@@ -31,36 +30,36 @@ function AddToCart() {
 
 
         return (
-            <UserContext.Provider value={perProductValue}>
-                <Row>
-                    <Col xl={6} xs={6} className='countCol'>
-                        <div className='counterBox'>
-                            <div
-                                className="counterBtn"
-                                onClick={() => {
-                                    setCount(count + 1);
-                                }}
-                            >
-                                <FiPlus />
-                            </div>
-                            <span className="numberText">{count}</span>{" "}
-                            <div
-                                className="counterBtn"
-                                onClick={() => decrement()}
-                            >
 
-                                <BiMinus />
-                            </div>
+            <Row>
+                <Col xl={6} xs={6} className='countCol'>
+                    <div className='counterBox'>
+                        <div
+                            className="counterBtn"
+                            onClick={() => {
+                                setCount(count + 1);
+                            }}
+                        >
+                            <FiPlus />
                         </div>
-                    </Col>
-                    <Col xl={6} xs={6} className='priceCol'>
-                        <div>
+                        <span className="numberText">{count}</span>{" "}
+                        <div
+                            className="counterBtn"
+                            onClick={() => decrement()}
+                        >
 
-                            <span className="price">$ {perProductValue}<span className="kg">/kg</span></span>
+                            <BiMinus />
                         </div>
-                    </Col>
-                </Row>
-            </UserContext.Provider>
+                    </div>
+                </Col>
+                <Col xl={6} xs={6} className='priceCol'>
+                    <div>
+
+                        <span className="price">$ {perProductValue}<span className="kg">/kg</span></span>
+                    </div>
+                </Col>
+            </Row>
+
         )
     }
     return (
@@ -114,11 +113,15 @@ function AddToCart() {
                     total={20}
                 />
                 <div className="continueShop">
-                    <a href="/home" className="linkContinueShop">Continue Shopping</a>
+                    <Link to="/" className="linkContinueShopCard">Continue Shopping</Link>
+
                 </div>
                 <div className="checkOut">
-                    <Button className="btnCheckOut">Checkout</Button>
+                    <Link to='/checkout'><div className="btnCheckOut">Checkout</div></Link>
                 </div>
+
+
+
             </div>
         </section>
     );

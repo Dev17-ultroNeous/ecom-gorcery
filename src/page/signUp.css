@@ -30,7 +30,8 @@
     font-size: 32px;
     line-height: 41px;
     letter-spacing: 0.41px;
-    color: #082A4F
+    color: #082A4F;
+    text-align: center;
 }
 
 .inputField {
@@ -56,11 +57,11 @@
     padding-left: 8rem;
     align-items: center;
     display: flex;
-    color: #ffffff !important;
+    color: #ffffff;
     margin-top: 1rem;
-    background: #F2281A !important;
+    background: #F2281A;
     border-radius: 10px;
-    border-color: #F2281A !important;
+    border-color: #F2281A;
 
 }
 
@@ -80,13 +81,18 @@
     bottom: 1.2rem;
 }
 
+.signUp:hover {
+    color: #FFFFFF;
+    background-color: #F2281A;
+}
+
 .errorBoxs {
     height: 3.5rem;
 }
 
 .linkLogin {
     text-decoration: none;
-    color: #F2281A !important;
+    color: #F2281A;
     font-size: 18px;
     position: relative;
     left: 3px;
@@ -111,6 +117,8 @@
     }
 
     .boxSignup {
-        height: 100vh;
+        height: auto;
+        padding: 3rem;
+        align-items: stretch;
     }
 }

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Card, Col, Image, Row } from "react-bootstrap";
+import { Image, } from "react-bootstrap";
 import Slider from "react-slick";
 import { sliderData } from '../utils/Data'
 function Sliders() {

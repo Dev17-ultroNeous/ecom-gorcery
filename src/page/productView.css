@@ -1,5 +1,5 @@
 .productViewContainer {
-    padding-top: 1rem;
+    padding-top: 3rem;
     padding-left: 8rem;
     padding-right: 8rem;
 }
@@ -48,7 +48,7 @@
     background: #ffe9e9;
     text-align: center;
     border-radius: 4px;
-    color: #e41111 !important;
+    color: #e41111;
     display: flex;
     align-items: center;
     margin-left: 8px;
@@ -93,6 +93,26 @@
 
 .descripation {
     padding-top: 1rem;
+}
+
+.boxAddToBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.addTocardBtn {
+    border-radius: 27px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: #F2281A;
+    width: 25%;
+    border-radius: 10px;
+    border-color: #F2281A;
+
 }
 
 @media (min-width: 320px) and (max-width: 650px) {

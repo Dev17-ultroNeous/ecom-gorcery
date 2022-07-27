@@ -1,6 +1,7 @@
 .headingName {
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .headingCart {
@@ -11,7 +12,8 @@
 }
 
 .cartContainer {
-    padding: 5rem;
+    padding-top: 4rem;
+    height: 100vh;
 }
 
 .cartItem {
@@ -122,29 +124,23 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-.linkContinueShop {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration-line: underline !important;
-    color: rgba(0, 0, 0, 0.6);
-}
+
 
 .btnCheckOut {
     border-radius: 27px;
     font-weight: 500;
     font-size: 20px;
+    padding: 0rem;
+    padding-top: 0.5rem;
     padding-right: 9rem;
+    padding-bottom: 0.5rem;
     padding-left: 8rem;
     align-items: center;
     display: flex;
-    color: #ffffff !important;
-    background: #F2281A !important;
+    color: #ffffff;
+    background: #F2281A;
     border-radius: 10px;
-    border-color: #F2281A !important;
+    border-color: #F2281A;
 }
 
 .continueShop {
@@ -152,7 +148,19 @@
     justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(0, 0, 0, 0.6);
 
+}
+
+.linkContinueShopCard {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .checkOut {
@@ -164,6 +172,8 @@
 @media (min-width: 320px) and (max-width: 650px) {
     .cartContainer {
         padding: 0rem;
+        height: 100vh;
+        padding-top: 1rem;
     }
 
     .addTocard {

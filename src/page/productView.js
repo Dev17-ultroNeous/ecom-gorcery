@@ -60,6 +60,12 @@ function ProductView() {
                     </div>
                     <ProductSlider />
                 </div>
+                <div className='boxAddToBtn'>
+                    <div className="addTocardBtn">
+                        Add to Cart
+                    </div>
+                </div>
+
             </div>
 
         </section>

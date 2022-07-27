@@ -18,7 +18,7 @@ import arrow from '../assets/Img/arrow2.png'
 import { Link } from 'react-router-dom';
 import MyOrder from '../page/myOrder';
 import Login from '../page/login';
-
+import { IoCartSharp } from 'react-icons/io5'
 
 const NavBarsHome = () => {
     const value = useContext(useContext);
@@ -57,10 +57,10 @@ const NavBarsHome = () => {
                             <Button className='searchBtn'>Search</Button>
                             <span className='linkAddtocard'>
 
-                                <Link to='/addtocart' className='addToCard'> <RiShoppingBasketFill /></Link>
+                                <Link to='/addtocart' className='addToCardLink'> <IoCartSharp /></Link>
 
                                 <div className='heartNav'>
-                                    <Link to='/favorite'> <FaHeart /></Link>
+                                    <Link to='/favorite' className='heartLink'> <FaHeart /></Link>
 
                                 </div>
                             </span>
@@ -80,17 +80,18 @@ const NavBarsHome = () => {
                     </div>
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title><Link to='/home' className='navLogo'>Big Basket</Link></Offcanvas.Title>
+                            <Offcanvas.Title><Link to='/' className='navLogo'>Big Basket</Link></Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <ListGroup className='linkMobile'>
-                                <Link to="myorder"><RiShoppingBasketFill className='icon' /> MyOrder</Link>
+                                <Link to="/myorder"><RiShoppingBasketFill className='icon' /> MyOrder</Link>
                                 <Link to="#">
                                     <AiOutlineSetting className='icon' />   About
                                 </Link>
                                 <Link to="/login"><RiUserFollowFill className='icon' /> login</Link>
                                 <Link to="/signup"><RiUserAddFill className='icon' /> signUp</Link>
                                 <Link to="/favorite"><FaHeart className='icon' />MyFavorite</Link>
+                                <Link to='/addtocart'> <IoCartSharp className='icon' />AddToCart</Link>
                             </ListGroup>
                         </Offcanvas.Body>
                     </Offcanvas>
