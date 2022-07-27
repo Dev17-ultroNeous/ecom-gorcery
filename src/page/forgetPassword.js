@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../page/forgetPassword.css'
 function ForgetPassword() {
     const nav = useNavigate();
@@ -44,7 +44,7 @@ function ForgetPassword() {
                     </div>
                 </form>
                 <div className='backToLogin'>
-                    <a href='/login' className='linkBackToLogin'>Back to Login</a>
+                    <Link to='/login' className='linkBackToLogin'>Back to Login</Link>
                 </div>
             </div>
         </div >

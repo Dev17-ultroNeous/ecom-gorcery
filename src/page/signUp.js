@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../page/signUp.css'
 function SignUp() {
     const nav = useNavigate();
@@ -20,7 +20,7 @@ function SignUp() {
             <div className='signupSection'>
                 <div className='boxSignup'>
                     <div className='headOfSingUp'>
-                        <h1 className='headingSignUp'>signUp</h1>
+                        <h1 className='headingSignUp'>Sign up</h1>
                     </div>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -51,7 +51,7 @@ function SignUp() {
                         </div>
                     </form>
                     <div className='haveAccount'>
-                        <span className='textAccount'>Already have an account?<a href='/login' className='linkLogin'>Login</a> </span>
+                        <span className='textAccount'>Already have an account?<Link to='/login' className='linkLogin'>Login</Link> </span>
 
                     </div>
                 </div>

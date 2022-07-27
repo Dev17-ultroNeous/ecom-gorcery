@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react'
 import { Card, Col, Image, Row } from 'react-bootstrap'
 import { GoPlus } from 'react-icons/go'
 import '../componets/Products.css'
-import { createContext } from 'react';
+import { CartProvider } from './CartContext'
 
 function ProductSection({ list, name, link }) {
 
@@ -16,7 +16,7 @@ function ProductSection({ list, name, link }) {
             <div className='productsContainer'>
                 <div className='products'>
                     <h1 className='headingProducts'>{name}</h1>
-                    <a href={link} >Show All</a>
+                    <a href={link} className='showAll'>Show All</a>
                 </div>
                 <Row>
                     {list.map((v, i) => {

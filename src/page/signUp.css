@@ -10,6 +10,10 @@
     justify-content: center;
 }
 
+.headOfSingUp {
+    padding-bottom: 1rem;
+}
+
 .inputBox {
     display: flex;
     flex-direction: column;
@@ -53,9 +57,7 @@
     align-items: center;
     display: flex;
     color: #ffffff !important;
-    position: relative;
-    right: 0rem;
-    top: 1rem;
+    margin-top: 1rem;
     background: #F2281A !important;
     border-radius: 10px;
     border-color: #F2281A !important;
@@ -63,13 +65,11 @@
 }
 
 .btnSignUpBox {
-    position: relative;
-    top: 2rem;
+    margin-top: 2rem;
 }
 
 .haveAccount {
-    position: relative;
-    top: 5rem;
+    margin-top: 2rem;
 }
 
 .errors {
@@ -100,8 +100,7 @@
     }
 
     .btnSignUpBox {
-        position: relative;
-        top: 1rem;
+        margin-top: 1rem;
         display: flex;
         justify-content: center;
     }

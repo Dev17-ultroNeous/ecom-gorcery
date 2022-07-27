@@ -2,12 +2,13 @@ import React from "react";
 import { Card, Col, Image, Row } from "react-bootstrap";
 import { categoriesData } from "../utils/Data";
 import '../componets/Categories.css'
+import { Link } from "react-router-dom";
 function Categories() {
     return (
         <section className="categoriesSection">
             <div className="headingCategories">
                 <h1 className="heading">Categories</h1>
-                <a href="allcategories" >Show All</a>
+                <Link to="allcategories" className="showAll">Show All</Link>
             </div>
             <div className="boxCategories">
                 <Row>

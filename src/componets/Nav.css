@@ -1,70 +1,56 @@
  #navbarScroll {
-     display: flex !important;
+     display: flex;
      flex-basis: auto;
-     justify-content: space-between !important;
+     justify-content: space-between;
  }
 
+ .linkHome {
+     display: flex;
+     align-items: center;
+
+ }
+
+ .linkHome a {
+     font-weight: 500;
+     font-size: 20px;
+     color: #082A4F;
+
+     padding-left: 1rem;
+ }
+
+ .linkUser {
+     display: flex;
+     align-items: center;
+ }
 
  .logo {
      font-weight: 500;
      font-size: 25px;
      color: #082A4F;
+     display: flex;
+     align-items: center;
+     padding-right: 2rem;
  }
 
- .login {
+ .login a {
      font-weight: 400;
      font-size: 20px;
-     color: #000000 !important;
+     color: #082A4F;
      text-decoration: none;
+     padding-right: 2rem;
  }
 
- .signUplink {
+ .signUplink a {
      font-weight: 400;
      font-size: 20px;
-     color: #000000 !important;
+     color: #082A4F;
      text-decoration: none;
- }
-
- a {
-     color: #082A4F !important;
- }
-
- a :hover {
-     color: #000000 !important;
- }
-
- .signUp {
-     font-weight: 400;
-     font-size: 20px;
-     color: #000000 !important;
-     text-decoration: none;
- }
-
- .navbar-expand-lg .navbar-collapse {
-     display: flex !important;
-     flex-basis: auto;
-     justify-content: space-between;
+     padding-right: 1rem;
  }
 
  .inputFindNow {
      border: 1px solid #8fa2c0;
      border-radius: 27px;
-     padding: 8px;
-     padding-left: 2.8rem;
-     font-weight: 400;
-     font-size: 20px;
-     color: #8fa2c0;
- }
-
- .btn-primry {
-     color: #f09133 !important;
-
- }
-
- .inputFindNow {
-     border: 1px solid #8fa2c0;
-     border-radius: 27px;
-
      width: 18rem;
      padding-left: 1rem;
      font-weight: 400;
@@ -76,11 +62,10 @@
      border-radius: 27px;
      font-weight: 500;
      padding-left: 2rem;
+     margin-left: -5rem;
      font-size: 20px;
      padding-right: 2rem;
      color: #ffffff;
-     position: relative;
-     right: 3rem;
      background-color: #082A4F !important;
      border-color: #082A4F !important;
  }
@@ -90,14 +75,16 @@
      text-align: center;
      display: flex;
      align-items: center;
+     color: #082A4F;
+     margin-left: 1rem;
 
  }
 
- .heartNav {
+ .heartNav a {
      font-size: 32px;
+     color: #082A4F;
+     margin-left: 1rem;
 
-     position: relative;
-     left: 1rem;
  }
 
  .linkAddtocard {
@@ -110,12 +97,19 @@
          display: none;
      }
 
+     .offcanvas.show {
+         transform: none;
+         background-color: #082A4F;
+         ;
+     }
+
      .navMobile {
          padding: 1rem;
      }
 
      .navLogo {
          padding-left: 2.1rem;
+         color: #ffffff;
      }
 
      .boxLogo {
@@ -123,15 +117,17 @@
          justify-content: space-between;
      }
 
-     .heartNav {
-         font-size: 32px;
-         position: relative;
-         left: 0.5rem;
+
+     .linkMobile a {
+         color: #ffffff;
      }
 
-     .headingLogo {
+     .headingLogo a {
          font-size: 26px;
+         color: #082A4F;
      }
+
+
 
      .toggleBtn {
          font-size: 26px;
@@ -142,6 +138,7 @@
      .icon {
          font-size: 26px;
          margin: 1rem;
+         color: #ffffff;
      }
  }
 

@@ -40,6 +40,8 @@
     height: 48px;
     border: 1px solid #082A4F;
     border-radius: 10px;
+
+    text-align: center;
     font-size: 25px;
     position: relative;
     right: 1rem;
@@ -51,6 +53,8 @@
     border: 1px solid #082A4F;
     border-radius: 10px;
     font-size: 25px;
+
+    text-align: center;
     position: relative;
 
 }
@@ -62,6 +66,8 @@
     border-radius: 10px;
     font-size: 25px;
     position: relative;
+
+    text-align: center;
     /* padding-left: 2rem; */
     left: 1rem;
 
@@ -74,6 +80,8 @@
     border-radius: 10px;
     font-size: 25px;
     position: relative;
+
+    text-align: center;
     /* padding-left: 2rem; */
     left: 2rem;
 }

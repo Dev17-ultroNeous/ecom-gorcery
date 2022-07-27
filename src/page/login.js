@@ -2,7 +2,7 @@ import React from 'react'
 import '../page/login.css'
 import { BsEye } from 'react-icons/bs'
 import { Button } from 'react-bootstrap'
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GrFacebookOption } from 'react-icons/gr'
 import { useForm } from "react-hook-form";
 
@@ -11,7 +11,7 @@ function Login() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = (data) => {
         console.log(data);
-        nav("/home");
+        nav("/");
     }
     return (
         <section className='login'>
@@ -55,7 +55,7 @@ function Login() {
 
                         </div>
                         <div className='linkForget'>
-                            <a href='/forgetpassword' className='forgetDetails'>Forgot Password?</a>
+                            <Link to='/forgetpassword' className='forgetDetails'>Forgot Password?</Link>
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ function Login() {
                     </div>
                 </form>
                 <div className='doNotAccount'>
-                    <p className='textAccount'>Don’t have an account?<a href='/signup' className='signupLink'>Sign Up</a> </p>
+                    <p className='textAccount'>Don’t have an account?<Link to='/signup' className='signupLink'>Sign Up</Link> </p>
                 </div>
                 <p className='orText'>Or</p>
                 <div className='fbLoginBox'>

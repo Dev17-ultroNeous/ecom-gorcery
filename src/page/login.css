@@ -13,6 +13,7 @@
 .head {
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .linkForget {
@@ -46,6 +47,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: #FFFFFF;
+    padding-right: 6rem;
 }
 
 ::placeholder {
@@ -67,6 +69,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: #FFFFFF;
+    padding-right: 6rem;
 }
 
 .forgetDetails {
@@ -75,8 +78,8 @@
     position: relative;
     text-align: center;
     color: #F2281A !important;
-    top: 3rem;
-    left: 4rem;
+    top: 2.9rem;
+    left: 5rem;
 }
 
 .loginBtn {
@@ -90,8 +93,9 @@
     background: #F2281A !important;
     border-radius: 10px;
     border-color: #F2281A !important;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+
 }
 
 .loginBox {
@@ -133,8 +137,8 @@
     display: flex;
     color: rgba(0, 0, 0, 0.6);
     justify-content: center;
-    position: relative;
-    top: 4rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
 }
 
 .fbLogin {
@@ -142,8 +146,8 @@
     border: 1px solid #7D7D7D;
     border-radius: 10px;
     padding: 0.4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 a {
@@ -153,8 +157,6 @@ a {
 .fbLoginBox {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 4rem;
 }
 
 .fbIcon {

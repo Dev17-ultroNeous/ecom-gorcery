@@ -15,6 +15,10 @@ import { RiUserAddFill } from 'react-icons/ri';
 import { RiUserFollowFill } from 'react-icons/ri'
 import { AiOutlineMenu } from 'react-icons/ai'
 import arrow from '../assets/Img/arrow2.png'
+import { Link } from 'react-router-dom';
+import MyOrder from '../page/myOrder';
+import Login from '../page/login';
+
 
 const NavBarsHome = () => {
     const value = useContext(useContext);
@@ -27,69 +31,66 @@ const NavBarsHome = () => {
             <div className='navLab'>
                 <Navbar bg="light" expand="lg" >
                     <Container>
-                        <Navbar.Brand href="/home" className='logo'>Big Basket</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="navbarScroll" />
-                        <Navbar.Collapse id="navbarScroll">
-                            <Nav
-                                className="me-auto my-2 my-lg-0"
-                                navbarScroll
-                            >
+                        <div className='linkHome'>
+                            <Link to="/" className='logo'>Big Basket</Link>
 
-                                <Nav.Link href="myorder">MyOrder</Nav.Link>
-                                <Nav.Link href="#">
-                                    About
-                                </Nav.Link>
-                            </Nav>
-                            <Form className="d-flex">
-                                <div className='login'>
-                                    <Nav.Link href="/login"><RiUserFollowFill /> login</Nav.Link>
+                            <Link to='/myorder'>MyOrder</Link>
+                            <Link to={'#'}>
+                                About
+                            </Link>
+                        </div>
+
+
+                        <Form className="linkUser">
+                            <div className='login'>
+                                <Link to='/login'><RiUserFollowFill /> login</Link>
+                            </div>
+                            <div className='signUplink'>
+                                <Link to='/signup'><RiUserAddFill /> signUp</Link>
+                            </div>
+                            <Form.Control
+                                type="search"
+                                placeholder="Search"
+                                className="inputFindNow"
+                                aria-label="Search"
+                            />
+                            <Button className='searchBtn'>Search</Button>
+                            <span className='linkAddtocard'>
+
+                                <Link to='/addtocart' className='addToCard'> <RiShoppingBasketFill /></Link>
+
+                                <div className='heartNav'>
+                                    <Link to='/favorite'> <FaHeart /></Link>
+
                                 </div>
-                                <div className='signUplink'>
-                                    <Nav.Link href="/signup"><RiUserAddFill /> signUp</Nav.Link>
-                                </div>
-                                <Form.Control
-                                    type="search"
-                                    placeholder="Search"
-                                    className="inputFindNow"
-                                    aria-label="Search"
-                                />
-                                <Button className='searchBtn'>Search</Button>
-                                <span className='linkAddtocard'>
+                            </span>
 
-                                    <a href='#' className='addToCard'> <RiShoppingBasketFill /></a>
+                        </Form>
 
-                                    <div className='heartNav'>
-                                        <a href='favorite'> <FaHeart /></a>
-                                    </div>
-                                </span>
-
-                            </Form>
-                        </Navbar.Collapse>
                     </Container>
                 </Navbar>
             </div>
             <div className='navMobile'>
                 <div className='boxLogo'>
                     <div className='logoname'>
-                        <h1 className='headingLogo'><a href='/home'>Big Basket</a></h1>
+                        <h1 className='headingLogo'><Link to='/'>Big Basket</Link></h1>
                     </div>
                     <div onClick={handleShow} className='toggleBtn'>
                         <AiOutlineMenu />
                     </div>
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title><a href='/home' className='navLogo'>Big Basket</a></Offcanvas.Title>
+                            <Offcanvas.Title><Link to='/home' className='navLogo'>Big Basket</Link></Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <ListGroup variant="flush">
-                                <Nav.Link href="myorder"><RiShoppingBasketFill className='icon' /> MyOrder</Nav.Link>
-                                <Nav.Link href="#">
+                            <ListGroup className='linkMobile'>
+                                <Link to="myorder"><RiShoppingBasketFill className='icon' /> MyOrder</Link>
+                                <Link to="#">
                                     <AiOutlineSetting className='icon' />   About
-                                </Nav.Link>
-                                <Nav.Link href="/login"><RiUserFollowFill className='icon' /> login</Nav.Link>
-                                <Nav.Link href="/signup"><RiUserAddFill className='icon' /> signUp</Nav.Link>
-
-                                <Nav.Link href="/favorite"><FaHeart className='icon' />MyFavorite</Nav.Link>
+                                </Link>
+                                <Link to="/login"><RiUserFollowFill className='icon' /> login</Link>
+                                <Link to="/signup"><RiUserAddFill className='icon' /> signUp</Link>
+                                <Link to="/favorite"><FaHeart className='icon' />MyFavorite</Link>
                             </ListGroup>
                         </Offcanvas.Body>
                     </Offcanvas>

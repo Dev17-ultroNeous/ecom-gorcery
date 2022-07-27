@@ -143,5 +143,28 @@ export const myOrderData = [
         price: '$13/kg'
     },
 
+]
+export const cartData = [
+    {
+        id: 1,
+        name: "carrot",
+        image: carrot,
+        price: '13',
+        weight: '200/gm'
+    },
+    {
+        id: 2,
+        name: "apple",
+        image: apple,
+        weight: '200/gm',
+        price: '18'
+    },
+    {
+        id: 3,
+        name: "snacks",
+        image: snacklogo,
+        price: '20',
+        weight: '200/gm'
+    },
 
 ]

@@ -5,6 +5,7 @@ import './App.css';
 import {
   Routes,
   Route,
+  BrowserRouter as Router,
 } from "react-router-dom";
 import Home from './page/home';
 import Login from "./page/login";
@@ -16,28 +17,31 @@ import AllCategories from "./page/allCategories";
 import AllProducts from "./page/allProducts";
 import { allFruitData, allProductsData } from "./utils/allData";
 import MyOrder from "./page/myOrder";
-import { useContext, useState } from "react";
 import ProductView from "./page/productView";
 import FavoriteProducts from "./page/favoriteProducts";
+import AddToCart from "./page/addToCart";
+import { CartProvider } from "./componets/CartContext";
 function App() {
 
   return (
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="login" element={<Login />} />
-      <Route path="signup" element={<SignUp />} />
-      <Route path="forgetpassword" element={<ForgetPassword />} />
-      <Route path="otp" element={<Otp />} />
-      <Route path="resetpassword" element={<ResetPassword />} />
-      <Route path="allcategories" element={<AllCategories />} />
-      <Route path="allvegitable" element={<AllProducts list={allProductsData} name='vegitable' />} />
-      <Route path="allfruits" element={<AllProducts list={allFruitData} name='Fruits' />} />
-      <Route path="allsnacks" element={<AllProducts list={allFruitData} name='Snacks' />} />
-      <Route path="myorder" element={<MyOrder />} />
-      <Route path="productview" element={<ProductView />} />
-      <Route path="favorite" element={<FavoriteProducts />} />
-    </Routes>
+
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="forgetpassword" element={<ForgetPassword />} />
+        <Route path="otp" element={<Otp />} />
+        <Route path="resetpassword" element={<ResetPassword />} />
+        <Route path="allcategories" element={<AllCategories />} />
+
+        <Route path="myorder" element={<MyOrder />} />
+        <Route path="productview" element={<ProductView />} />
+        <Route path="favorite" element={<FavoriteProducts />} />
+        <Route path="addtocart" element={<AddToCart />} />
+      </Routes>
+    </Router>
+
   );
 }
 

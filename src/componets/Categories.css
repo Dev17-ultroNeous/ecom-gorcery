@@ -5,9 +5,9 @@
 
 .heading {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 28px;
     line-height: 19px;
-    color: #082A4F;
+    color: #082a4f;
 }
 
 .productCard {
@@ -20,7 +20,7 @@
 .nameProduct {
     font-size: 25px;
     text-align: center;
-    color: #082A4F;
+    color: #082a4f;
     padding-top: 0.5rem;
 }
 

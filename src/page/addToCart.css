@@ -1,0 +1,179 @@
+.headingName {
+    display: flex;
+    justify-content: center;
+}
+
+.headingCart {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 18px;
+    color: #082A4F;
+}
+
+.cartContainer {
+    padding: 5rem;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.totalPrice {
+    display: flex;
+    justify-content: center;
+}
+
+.boxTotalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addTocard {
+    width: 50%;
+    border-radius: 6px;
+}
+
+.imgCard {
+    width: 7rem;
+
+}
+
+.titleProduct {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #082A4F;
+    margin-bottom: 0.2rem !important;
+}
+
+.detailsProduct {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2281A;
+}
+
+.kg {
+    font-weight: 400;
+}
+
+.infoProduct {
+    text-align: center;
+}
+
+/* .counterCard {
+    display: flex;
+    justify-content: center;
+} */
+
+.cross {
+    display: flex;
+    justify-content: end;
+}
+
+.countCol {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    left: 3.6rem;
+}
+
+.priceCol {
+    display: flex;
+    justify-content: end;
+}
+
+.counterBox {
+    display: flex;
+}
+
+.colCross {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    align-items: end;
+}
+
+.subTotal {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 19px;
+    color: #082A4F;
+}
+
+.totalPrice {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.linkContinueShop {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline !important;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.btnCheckOut {
+    border-radius: 27px;
+    font-weight: 500;
+    font-size: 20px;
+    padding-right: 9rem;
+    padding-left: 8rem;
+    align-items: center;
+    display: flex;
+    color: #ffffff !important;
+    background: #F2281A !important;
+    border-radius: 10px;
+    border-color: #F2281A !important;
+}
+
+.continueShop {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.checkOut {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .cartContainer {
+        padding: 0rem;
+    }
+
+    .addTocard {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .totalPrice {
+
+        padding: 0.5rem;
+
+    }
+}
