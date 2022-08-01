@@ -1,0 +1,84 @@
+.orderSummaryContainer {
+    padding-top: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.boxSummary {
+    padding-top: 2rem;
+}
+
+.detailsSummary {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* .receivedOrder{
+    background: #F2281A;
+        border: 1px solid #F2281A;
+} */
+.ant-steps-item-finish .ant-steps-item-icon>.ant-steps-icon {
+    color: #F2281A !important;
+}
+
+.ant-steps-item-custom.ant-steps-item-process .ant-steps-item-icon>.ant-steps-icon {
+    color: #082A4F !important;
+}
+
+.detailUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.titleDetails {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nameUser {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #082A4F;
+}
+
+.orderDetails {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+}
+
+.detailsCard {
+    padding: 0.6rem;
+    width: 30%;
+
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .orderSummaryContainer {
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .detailsSummary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detailsCard {
+        padding: 0.6rem;
+        width: 97%;
+    }
+
+    .heading {
+        padding-top: 0;
+    }
+}

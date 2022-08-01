@@ -112,6 +112,11 @@
 
 }
 
+.btnVerify:hover {
+    background-color: #F2281A;
+    color: #ffffff;
+}
+
 @media (min-width: 320px) and (max-width: 650px) {
     .otpSection {
         padding-top: 1rem;

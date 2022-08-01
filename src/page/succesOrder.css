@@ -1,14 +1,15 @@
 .containerBox {
-    padding-left: 8rem;
-    padding-right: 8rem;
     height: 100vh;
     background-color: #082A4F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgRight {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
     align-items: center;
     flex-direction: column;
 }
@@ -55,16 +56,28 @@
     display: flex;
     font-weight: 500;
     font-size: 20px;
-    width: 23%;
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     color: white;
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 0.3rem;
+
     background: #F2281A;
     border-radius: 10px;
     border-color: #F2281A;
 
+}
+
+.linkTrack {
+    color: #FFFFFF;
+}
+
+.linkTrack:hover {
+    color: #FFFFFF;
 }
 
 .btnTraceOrder {
@@ -89,11 +102,20 @@
 
 @media (min-width: 320px) and (max-width: 650px) {
     .containerBox {
+
         padding-left: 1rem;
         padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
     }
 
+    /* 
     .traceOrder {
         width: 100%;
-    }
+        padding-left: 4rem;
+        padding-right: 4rem;
+    } */
 }

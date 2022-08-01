@@ -1,0 +1,77 @@
+.deliveryContainer {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.detailFilled {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.area {
+    width: 38%;
+    height: 8rem;
+    background: #ffff;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 1px solid hsl(0, 0%, 80%);
+
+
+}
+
+.inputValue {
+    width: 38%;
+    background: #ffff;
+    height: 3rem;
+    border-radius: 6px;
+    margin: 1rem;
+    border: 1px solid hsl(0, 0%, 80%);
+}
+
+.inputValueSelect {
+    width: 38%;
+    height: 3rem;
+}
+
+::placeholder {
+    color: hsl(0, 0%, 50%);
+}
+
+.submitBtn {
+    border-radius: 27px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 3rem;
+    background: #F2281A;
+    border-radius: 10px;
+    border-color: #F2281A;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .deliveryContainer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .area {
+        width: 100%;
+    }
+
+    .inputValue {
+        width: 100%;
+    }
+
+    .inputValueSelect {
+        width: 100%;
+    }
+
+    .submitBtn {
+        font-size: 18px;
+    }
+}

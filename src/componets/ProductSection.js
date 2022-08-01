@@ -10,8 +10,6 @@ function ProductSection({ list, name, link }) {
     const [itemCount, setItemCount] = useState(0);
     const [item, setItem] = useState([])
 
-    { console.log(item) }
-
     return (
         <section className='productsSection'>
             <div className='productsContainer'>

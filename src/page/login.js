@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../page/login.css'
 import { BsEye } from 'react-icons/bs'
 import { Button } from 'react-bootstrap'
@@ -9,10 +9,23 @@ import { useForm } from "react-hook-form";
 function Login() {
     const nav = useNavigate();
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = (data) => {
-        console.log(data);
+
+    useEffect(() => {
+        const loggedInUser = localStorage.getItem("userLogin");
+        const foundUser = JSON.parse(loggedInUser);
+        {
+            if (foundUser) {
+                nav('/')
+            } else {
+                nav('/login')
+            }
+        }
+    }, [])
+    let onSubmit = (data) => {
+        localStorage.setItem('userLogin', true)
         nav("/");
     }
+
     return (
         <section className='login'>
             <div className='backImg'>

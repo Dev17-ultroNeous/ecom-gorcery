@@ -6,6 +6,7 @@ import {
   Routes,
   Route,
   BrowserRouter as Router,
+  useNavigate,
 } from "react-router-dom";
 import Home from './page/home';
 import Login from "./page/login";
@@ -23,6 +24,10 @@ import AddToCart from "./page/addToCart";
 import { CartProvider } from "./componets/CartContext";
 import CheckOut from "./page/checkOut";
 import SuccesOrder from "./page/succesOrder";
+import DeliveryAddress from "./page/deliveryAddress";
+import ChangePassword from "./page/changePassword";
+import OrderSummary from "./page/orderSummary";
+import { useEffect } from "react";
 function App() {
 
   return (
@@ -42,9 +47,11 @@ function App() {
         <Route path="addtocart" element={<AddToCart />} />
         <Route path="checkout" element={<CheckOut />} />
         <Route path="success" element={<SuccesOrder />} />
+        <Route path="deliveryaddress" element={<DeliveryAddress />} />
+        <Route path="changepassword" element={<ChangePassword />} />
+        <Route path="trackorder" element={<OrderSummary />} />
       </Routes>
     </Router>
-
   );
 }
 

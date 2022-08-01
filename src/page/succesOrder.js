@@ -22,7 +22,7 @@ function SuccesOrder() {
                 </div>
                 <div className='btnTraceOrder'>
                     <div className='traceOrder'>
-                        Track Order
+                        <Link to='/trackorder' className='linkTrack'>Track Order</Link>
                     </div>
                 </div>
                 <div className='continueShop'>

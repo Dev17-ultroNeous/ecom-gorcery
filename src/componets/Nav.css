@@ -10,6 +10,32 @@
 
  }
 
+ .cartButton {
+     padding: 0.5rem 1.5rem;
+     background-color: #003865;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: 1rem;
+     border-radius: 20px;
+     box-shadow: 0px 0px 10px 0px #003865;
+     cursor: pointer;
+ }
+
+ .cartButton span {
+     background-color: #ef5b0c;
+     font-size: 12px;
+     height: 1.5rem;
+     width: 1.5rem;
+     display: flex;
+     margin-left: 0.5rem;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100%;
+     box-shadow: 0px 0px 10px 0px #000;
+ }
+
  .linkHome a {
      font-weight: 500;
      font-size: 20px;

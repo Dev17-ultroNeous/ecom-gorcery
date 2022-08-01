@@ -19,7 +19,6 @@ function AddToCart() {
 
         useEffect(() => {
             setPerProductValue(count * props.v)
-            console.log(perProductValue);
         }, [count])
         const decrement = () => {
             if (count <= 1) {
@@ -54,7 +53,6 @@ function AddToCart() {
                 </Col>
                 <Col xl={6} xs={6} className='priceCol'>
                     <div>
-
                         <span className="price">$ {perProductValue}<span className="kg">/kg</span></span>
                     </div>
                 </Col>
